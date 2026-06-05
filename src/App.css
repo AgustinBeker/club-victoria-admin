@@ -1788,3 +1788,14 @@ tbody tr.playerRow:has(.feeBadge.DEUDA) td {
   opacity: 1;
   background: #fee2e2;
 }
+
+.waBtn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+}

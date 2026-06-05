@@ -1146,6 +1146,17 @@ const uploadPhoto = async (playerId, file) => {
                             </button>
 
                             <button
+  className="waBtn"
+  onClick={() => window.open(
+    `https://wa.me/?text=${encodeURIComponent(
+      `🪪 Carnet de ${getPlayerName(player)}\n${API_URL}/public-api/validate/${player.qrToken}/view`
+    )}`,
+    '_blank'
+  )}
+>
+  📲 WhatsApp
+</button>
+                            <button
   className="carnetBtn"
   onClick={() => window.open(`${API_URL}/public-api/validate/${player.qrToken}/view`, '_blank')}
 >
